@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inferencia y experimentos</title>
+    <link rel="stylesheet" href="css/npx.css">
+    <link rel="shortcut icon" href="src/images/test3.png" type="image/x-icon">
+</head>
+<body >
+<!--  CONTENEDOR FONDO  -->
+<div class="w-full h-full fondo mb-26">
+    <header class= "text-black shadow-2xl"  style="
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);">
+             <div class="  items-center justify-center text-sm font-bold ocultar">
+ 
+            
+                 <div class="w-1/3 flex justify-center items-center gap-x-8 ml-6 ">
+                    <a href="portada.html" class="test ">Portada</a>
+                     <a href="introduccion.html" class="test ">Introducción</a>
+                     <a href="desarollo.html" class="test ">Desarrollo</a>
+                     <a href="Libros.html" class="test ">Libros</a>
+                     <a href="Software.html" class="test ">Software</a>
+                 </div>
+ 
+                 <div class="w-1/3 flex justify-center items-center ocultar ">
+                     
+                     <a href="index.html"> <img src="src/images/ahora si x5.png" alt="" style="object-fit:contain ; max-width:650px; max-height: 130px;"> </a>
+                 </div>
+ 
+                 <div class="w-1/3 flex justify-center items-center gap-x-10 pr-4" >
+                     <a href="videos.html" class=" test ">Videos</a>
+                     <a href="conclusiones.html" class="test ">Conclusiones</a>
+                     <a href="bibliografia.html" class="test ">Bibliografia</a>
+                     <a href="contacto.html" class="test ">Contacto</a>
+                 </div>
+ 
+ 
+             </div>
+ 
+ 
+           <!-- MOBILE -->
+          
+         <div>
+             <nav class="nav ocultar2">
+ 
+                 <div class="nav__container">
+                     <a href="index.html "><h1 class="nav__logo">Estadistica inferecial</h1></a>
+         
+                     <label for="menu" class="nav__label">
+                         <img src="src/images/menu.svg" alt="menu" class="nav__img">
+                     </label>
+         
+                     <input type="checkbox"  id="menu" class="nav__input">
+         
+                     <div class="nav__menu"> 
+                     <a href="portada.html" class="nav__item ">Portada</a>
+                     <a href="introduccion.html" class="nav__item ">Introducción</a>
+                     <a href="desarollo.html" class="nav__item ">Desarrollo</a>
+                     <a href="Libros.html" class="nav__item">Libros</a>
+                     <a href="Software.html" class="nav__item ">Software</a>
+                     <a href="videos.html" class=" nav__item ">Videos</a>
+                     <a href="conclusiones.html" class="nav__item ">Conclusiones</a>
+                     <a href="bibliografia.html" class="nav__item ">Bibliografia</a>
+                     <a href="contacto.html" class="nav__item ">Contacto</a>
+                     </div>
+         
+                 </div>
+         
+         
+             </nav>
+             
+         
+             
+         </div>
+     </header>
+ 
+ 
+
+    
+<main>
+    
+    <div class="container mx-auto text-gray-200 ">
+        <div class="text-center text-3xl tracking-wide ">
+            
+            <h2 class="py-8 font-serif font-extrabold text-white">Ya teniendo las nociones básicas sobre lo que trata esta materia, vamos a adentrarnos mas en conceptos
+                fundamentales de la misma.
+            </h2>
+        </div>
+
+        <div class="container pb-16"> 
+            <h3 class="text-2xl pb-10 leading-10 border-b-2 "> Índice de contenido:
+                <ul class="list-decimal text-lg" >
+                    <li  class="list-item py-2"> <a href="#ancla1">Inferencia o Estadística Inferencial: Generalidades.</a> </li>
+                    <li  class="list-item py-2"> <a href="#ancla2">Diseño de Experimentos.</a> </li>
+                    <li  class="list-item py-2"><a href="#ancla3 ">Etapas del Diseño de Experimentos.</a> 
+                        <ul class="py-2" start="4">
+                            <li  class="list-inside"> <a href="#ancla31"> 3.1 Definición del Problema.</a> </li>
+                            <li  class="list-inside"> <a href="#ancla32"> 3.2 Diseño Experimental y Recolección de Datos.</a></li>
+                            <li  class="list-inside"> <a href="#ancla33">3.3 Organización y Presentación de los Datos.</a> </li>
+                            <li  class="list-inside"><a href="#ancla34">3.4  Inferencia y Formulación de la Respuesta.</a> </li>
+                        </ul>
+                    </li>
+                   
+                    <li  class="list-item py-2"> <a href="#ancla4">Recolección de datos e información: Fuentes, población, muestra, determinación del tamaño de la muestra, muestreo y tipos, técnicas e instrumentos de recolección.</a> 
+                    </li>
+                  </ul>
+            </h3>
+           
+        
+        <!-- 1 -->
+        <section class="pt-10">
+            <a name="ancla1"></a>
+            <h4 class="text-white text-xl py-6 "> 1.Inferencia o Estadística Inferencial: Generalidades.</h4>
+            <div class="text-white">
+
+          
+            <p class="textos sangria">Primero que nada, antes de entrar en materia debemos entender de donde nace la inferencia o estad&iacute;stica inferencial y para eso debemos conocer lo que es la estad&iacute;stica.</p>
+            <p class="textos">Seg&uacute;n el diccionario de espa&ntilde;ol de la universidad de Oxford se define como &ldquo;Ciencia que utiliza conjuntos de datos num&eacute;ricos para obtener, a partir de ellos, inferencias basadas en el c&aacute;lculo de probabilidades.&rdquo; Es decir, es una disciplina cient&iacute;fica que se ocupa de la obtenci&oacute;n, orden y an&aacute;lisis de un conjunto de datos con el fin de obtener explicaciones y predicciones sobre fen&oacute;menos observados.</p>
+            <p class="textos">La Estad&iacute;stica se divide en dos grandes ramas lo que es la estad&iacute;stica descriptiva y la estad&iacute;stica inferencial. La estad&iacute;stica descriptiva describe, analiza y representa un grupo de datos utilizando m&eacute;todos num&eacute;ricos y gr&aacute;ficos que resumen y presentan la informaci&oacute;n contenida en ellos.</p>
+            <p class="textos">Pero sin embargo en ocasiones no se puede observar a todos los datos o poblaci&oacute;n en estudio (por motivos econ&oacute;micos o por lo grande que es la poblaci&oacute;n, aunque no siempre es as&iacute;.) por lo que da partida a lo que se conoce como inferencia estad&iacute;stica.</p>
+            <p class="textos">Esta se puede definir como el conjunto de m&eacute;todos y t&eacute;cnicas que a partir de una parte de esta (muestra) determina propiedades, datos, comportamiento o cualquier otro par&aacute;metro deseado en el estudio.</p>
+            <p class="textos">Como antes mencione la estad&iacute;stica inferencial tiene como objetivo la consecuci&oacute;n de datos del estudio de una muestra de una poblaci&oacute;n determinada, por ejemplo, aplica diferentes tama&ntilde;os mu&eacute;strales para obtener datos m&aacute;s precisos con respecto a la confianza y el error de los resultados del estudio.</p>
+            <p class="textos">La inferencia estad&iacute;stica utiliza dos m&eacute;todos principalmente (aunque existen muchos m&aacute;s que m&aacute;s adelante ser&aacute;n mencionados en otros temas) para la obtenci&oacute;n de los datos a partir de las muestras los cuales son:</p>
+            <p>
+
+       
+            <ul class="list-disc pl-16">
+                <li> <strong> Estimación puntual: </strong>   Esta consiste en aproximar al valor más exacto un parámetro en estudio (cuantos autos existen en una determinada ciudad o cuantos bilingües existen en un país). Algunos ejemplos de métodos matemáticos usados para esta técnica son: media muestral, cuasi-varianza muestral, proporción muestral, etc.</li>
+                <li> <strong>Estimación por intervalos: </strong>  La estimación por intervalos consiste en establecer el intervalo de valores donde es más probable se encuentre el parámetro.</li>
+            </ul>
+        </p>
+        </div>
+        </section>
+                
+        <!-- FINAL 1 -->
+
+        <!-- 2 -->
+        <section>
+            <a name="ancla2"></a>
+            <h4 class="text-white text-xl py-6 "> 2. Diseño de experimentos.</h4>
+            <div class="text-white">
+                <p class="textos sangria">   Los experimentos son parte fundamental de muchísimas ciencias y forman parte esencial de la búsqueda del conocimiento.  Estos se realizan con la intención de generar conocimiento en un fenómeno determinado de estudio y usualmente estos se suelen realizar con el método científico.</p>
+                <p class="textos"> Pero en comienzos del siglo XX  El matemático Ronal Fisher decidió combinar la estadística y el diseño de experimentos, aunque no fue hasta los años de 1930 que se empezó a utilizar en distintas industrias.</p>
+                <p class="textos">Lo que hoy se conoce como diseño experimental, se trata de una técnica que pertenece al ámbito de la estadística y que también se suele usar en ingeniería que permite valorar las causas y los efectos que tiene una variable sobre otra dentro de una investigación experimental. </p>
+                <p class="textos">Él investigador al aplicar esta técnica modifica intencionalmente la variable independiente para cuantificar los efectos que ella tiene en la variable dependiente. 
+                    Básicamente el diseño experimental lo que busca es determinar el cambio que se da en una variable en estudio como consecuencia de modificar la otra. Es una especie de relación causa y efecto y como es en bien sabido en el diseño de experimentos siempre se estudian principalmente dos variables involucradas, la variable independiente (causa) y la dependiente (efecto) para poner esto un poco más en contexto imagine, por ejemplo
+                    </p>
+                <p class="textos">Una empresa que desea lanzar al mercado una nueva línea de taladros y tienen 5 materiales a disposición para la fabricación del mismo por lo cual para tomar la decisión realizan un diseño experimental con el objetivo de probar los 5 materiales y conocer la opinión del desempeño (sí tiene buen rendimiento) del material con el cual cada taladro fue fabricado. En este ejemplo la variable independiente es el material (causa) y la dependiente la cual nunca se ve modificada es el desempeño del material con el cual el taladro fue fabricado </p>
+                <p class="textos">Existen principalmente dos tipos de diseños experimentales, el primero es el pre-experimental que consiste en hacer un acercamiento a la variable independiente y analizar su comportamiento y el otro es el diseño experimental propiamente dicho donde se procede con las modificaciones de la variable independiente. </p>
+                <p class="textos">Un experimento de este tipo se puede realizar por diversas razones, dependiendo de la necesidad del investigador y hay que tener en cuenta que en este proceso de realización intervienen distintos factores como lo son: la unidad experimental que es el objeto que es capaz de medir una medición de la variable de respuesta, los niveles que son los diferentes valores que se le asignan a cada valor estudiado, el error que son esas pequeñas diferencias que existen entre el valor observado y el exacto entre cada medición.</p>
+                <p class="textos">Como pueden ver esto es un tema bastante amplio lo cual tratar de contemplarlo completamente es realmente complicado, por lo cual pueden revisar los libros que se encuentran en la página para indagar más sobre este tema. Por los momentos procederemos con las etapas del diseño experimentos.</p>
+                
+        
+
+        </section>
+
+            <!-- 2 FINAL -->
+            <!--  3 INICIO  -->
+            <section>
+                <a name="ancla3"></a>
+                <h4 class="text-white text-xl py-6 "> 3. Etapas del diseño de experimentos.</h4>
+                <div class="text-white">
+                    <p class="textos sangria"> Primero que nada, hay que recalcar que distintos autores definen de manera distinta las etapas de los diseños de experimentos (Doe) aunque todos en general tienen las mismas matices procederemos a explicar principalmente 4 etapas del diseño de experimento.</p>
+                    <p class="textos">
+                        <ol class="py-2" >
+                            <li  class="list-inside text-gray-200"> <strong> 3.1 Definición del Problema.</strong> 
+                                <a name="ancla31"></a>
+                               <ul class="list-disc py-4 sangria">
+                                
+                                    Como es lógico debemos comenzar primero definiendo el problema, conocer sus matices, tener claros los objetivos, limitaciones y todos los factores involucrados en el mismo que puedan afectar u aporten información para el experimento a realizar.  
+                                        Puesto que en muchas ocasiones los recursos serán limitados y siempre debemos apuntar a la eficiencia es primordial tener bien formadas las bases del problema. Un problema bien propuesto tiende a producir más información y de una manera mucha más clara que se traduce en una mejor evaluación de lo que usted considere como importante.
+
+    
+                               </ul>
+                            </li>
+                            <li  class="list-inside text-gray-200 "> <strong>3.2 Diseño Experimental y Recolección de Datos. </strong>
+                                <a name="ancla32"></a> 
+                                <p class="textos py-4 sangria">Esta etapa es una de las más importantes debido a que aquí es donde se diseña el experimenta y se recolecta los datos para este, por lo cual es importante realizar los siguientes procesos: </p>
+                                <ul class="list-disc pl-16">
+                                    <li class="textos">
+                                        <strong> Definición de variables: </strong> Identificar, describir y definir la variable dependiente e independiente y cualquiera otra variable que se pueda encontrar en el experimento.
+                                    </li>
+
+                                    <li class="textos">
+                                        <strong>Identificar fuentes de variación:  </strong>  Identificar los niveles, las unidades experimentales, entre todos aquellos otros factores involucrados.
+                                    </li>
+
+                                    <li class="textos">
+                                       <strong> Técnicas: </strong>  Definir e identificar todas las técnicas y medidas que se emplearan para la recolección de datos y sus análisis. 
+                                    </li>
+
+                                    <li class="textos">
+                                       <strong>Planeación del diseño experimental:  </strong>   Por último se debe organizar y planear el experimento en base al problema definido anteriormente y teniendo en cuenta los datos, variables y todos aquellos factores involucrados en el experimento.
+                                    </li>
+                                   </ul>
+
+
+                            </li>
+
+                            <li  class="list-inside"> <strong class="text-gray-200">3.3 Organización y Presentación de los Datos. </strong> 
+                                <a name="ancla33"></a>
+                                <p class="textos py-4 sangria">  Esta etapa se comprende en dos procesos principalmente:</p>
+                                <ul class="list-disc pl-16">
+                                <li class="textos ">
+                                    <strong>Organización:  </strong> En ese punto lleva acabo todo el proceso de optimización, organización y análisis de los datos recolectados, se debe determinar la mejor técnica estadística que describa el comportamiento de los datos.
+                                </li>
+
+                                <li>
+                                  <strong>Presentación de datos: </strong>    Ahora se deben presentar todos los datos, organizados, analizados, optimizados con todos los procesos, factores involucrados, datos y técnicas estadísticas que utilizaran para el experimento y su inferencia. 
+                                </li>
+
+                                </ul>
+
+                            </li>
+                            <li  class="list-inside py-4"> <strong class="text-gray-200">3.4  Inferencia y Formulación de la Respuesta. </strong> 
+                                <a name="ancla34"></a>
+                            <p  class="textos pt-4 sangria">
+                                 En este punto se realiza la inferencia para la posterior presentación de la respuesta.
+                                    Recordamos que la inferencia explicada un poco más arriba es el proceso definir como el conjunto de métodos y técnicas que a partir de una parte de esta (muestra) determina propiedades, datos, comportamiento o cualquier otro parámetro deseado en el estudio. En pocas palabras la ejecución de las técnicas estadísticas seleccionadas con sus datos recolectados en todas las etapas anteriores. 
+
+                            </p>
+                            <p>
+                                Una vez que se ha realizado la inferencia se procede a interpretar los resultados y formular la respuesta sobre la cual se fundamentó dicho experimento, también se deben realizar pruebas de confirmación para validar las conclusiones del experimento. 
+                            </p>
+                            </li>
+                        </ol>
+                    </p>
+                    <p class="textos"></p>
+                    <p class="textos"></p>
+                    <p class="textos"></p>
+                </div>
+            </section>
+            <!-- 3 FINAL  -->
+            <!-- 4 INICIO  -->
+            <section> 
+                <h4 class="text-white  text-xl ">4. Recolección de datos e información</h4>
+                <a name="ancla4"></a>
+                <p class="textos pt-4 sangria">Como es bien sabido en cualquier experimento que vayamos a realizar los datos son la base central en la cual trabajamos, sin los datos no tenemos nada y parte del proceso de los diseños experimentales es la recolección de datos y evidentemente es una etapa fundamental de cualquier experimento que debe realizarse con los mejores métodos adaptados a nuestra problemática.</p>
+                <p class="textos">Formalmente podríamos definir la recolección de datos como el proceso donde las personas encargadas del experimento obtienen la información necesaria para los objetivos de su experimento y estos datos pueden ser variados tales como hechos, cifras, objetos, símbolos y eventos que pueden ser recolectados de diferentes fuentes. </p>
+                <p class="textos">Estos datos pueden venir de distintas fuentes de información y es importante mencionar que algunos autores pueden ubicarlos en cuantitativos (uso de números)  o cualitativos (cualidades) aunque nos enfocaremos principalmente en los métodos mas conocidos sin tener en cuenta estos factores. Podemos mencionar las siguientes fuentes de recolección de información:
+                    <ul class="list-disc pl-16">
+                        <li>Encuestas.</li>
+                        <li>Sondeos.</li>
+                        <li>Entrevistas.</li>
+                        <li>Focus group.</li>
+                        <li> Cuestionario.</li>
+                    </ul>
+                </p>
+                <p class="textos pt-4"> Existen otros métodos alternativos como pueden ser informes de ventas de una empresa, registros de un gobierno, estados financieros, entre otros. Por ejemplo, un método actualmente utilizado en diversos análisis desde hace varios años son las páginas webs. Herramientas como Google Analyctics permite a empresas a nivel mundial recolectar datos que estén disponibles en internet sobre el tráfico e interacción de sus sitios y productos.</p>
+                <p class="textos">Es de recalcar que métodos como este no existían hace muchos años, por lo cual los métodos de recolección de datos pueden variar y existen diversas fuentes para estos, por lo cual si estas interesado en saber más puedes consultar los libros recomendados en nuestra página sobre el tema de estadística inferencial.</p>
+                <p class="textos">Ahora bien, sabiendo esto ¿Cómo se recolectan los datos?  Estos métodos son variados y van íntimamente atados a la naturaleza del estudio debido a que hay métodos que se adaptan de mejor manera a distintos experimentos, pero antes de llegar a ese punto necesitamos definir ciertos conceptos como muestras y población, recordando que en la estadística inferencial trabajamos con muestras: </p>
+                <p class="textos"> 
+                    <ul class="list-disc pl-16">
+                        <li>
+                           <strong>Población: </strong>  Una población es todo el conjunto de individuos, datos, hechos, cifras o todo aquel dato que forme parte del objeto de estudio. Es importante recalcar que existen “dos tipos” de población los cuales son la infinita que comprende una población que no se puede medir (por ejemplo, estrellas en el universo) y las finitas que son aquellas que si podemos medir. 
+                        </li>
+                        <li>
+                           <strong>Muestra:  </strong>  La muestra no es más que en un subconjunto de datos (Una parte de los datos) perteneciente a la población en estudio y esta debe representar de manera la mejor manera el total de los datos.
+                        </li>
+                        <li>
+                           <strong>Muestreo: </strong>  El muestreo es el proceso por el mediante el cual se recolectan los datos y para esto se poseen diversas técnicas como se fue mencionado un poco antes.
+                        </li>
+                    </ul>
+                </p>
+                <p class="textos py-4">En este punto es importante hablar sobre cómo se realiza el muestreo y que tipos de nuestros existen, debido a que es con lo que la estadística inferencial trabaja.Existen principalmente dos tipos de muestreo que a su vez se dividen en otros, estos son: 
+                    <p class="textos"> <strong> Muestreo probabilístico: </strong> En este tipo de muestreo se selecciona a las muestras de manera aleatoria por lo cual todos tienen la misma posibilidad de ser seleccionados. Este se divide a su vez en: 
+                        <ul class="list-disc pl-16">
+                            <li>
+                                <strong> Muestro aleatorio simple:</strong>  Consiste en elegir a los datos completamente al azar.
+                            </li>
+                            <li>
+                                <strong>Muestreo sistemático: </strong>	 Este método elige de forma aleatoria al primer individuo  y luego se define un intervalo para completar el muestreo.
+                            </li>
+                            <li>
+                               <strong>  Muestreo estratificado:</strong>  En este tipo de muestreo se dividen a la población en grupos que compartan determinadas características para luego seleccionar miembros al azar de cada grupo.
+                            </li>
+                            <li>
+                                <strong>Muestro por conglomerados: </strong>	 Este usualmente se utiliza cuando es imposible tratar de elaborar una lista de la población, aunque estos tienden estar ya separados en grupos o conglomerados.
+                            </li>
+                        </ul>
+                    </p>
+                  <p class="textos pt-4">
+                    <strong>Muestreo no probabilístico: </strong>  Por ultimo tenemos la rama del muestro no probabilístico que se basa en la selección de la muestra de manera subjetiva, es decir, según la decisión propia de quien realice la investigación. De este se desprenden los siguientes tipos:
+                    <ul class="list-disc pl-16">
+                        <li>
+                            <strong>Muestro por cuota:  </strong>	Consiste en incluir en la muestra solo un grupo que cumpla con características determinadas como puede ser la edad o el sexo.
+                        </li>
+                          <strong>Muestreo intencional o por conveniencia: </strong>  Aqui el investigador selecciona la muestra considerando solamente sus criterios para lo que es mejor para el experimento.
+                        <li>
+                            <strong>Muestreo discrecional: </strong>	 Es muy parecido al intencional solo que aquí busca lo que este grupo seleccionado (en base a su conocimiento) para a muestra puede aportar.    
+                        </li>
+
+                        <li>
+                            <strong>Muestreo por bola de nieve: </strong>  Por último en esta técnica consiste en contactar a un sujeto de una muestra y que este le proporcione mas información para encontrar posibles sujetos que formen parte de esta muestra. Este método generalmente es aplicado cuando es difícil ubicar la población de estudio. 
+                        </li>
+                    </ul>
+                  </p>
+
+                </p>
+                <p class="textos pt-4">En cuanto a las herramientas disponibles para la recolección de datos pueden ser de distintos tipos , desde cuestionarios en internet, formularios en tiendas, bases de datos de empresas, registros contables, etc. Evidentemente esto puede variar según la naturaleza del experimento y de donde se encuentre la información a recolectar.</p>
+                <p class="textos"> Teniendo en cuenta lo antes mencionado, existe un punto que no hemos tocado y es ¿Cómo sé qué tamaño de muestra debo seleccionar? Pues realmente es bastante fácil. Para saber el tamaño de la muestra a estudiar basta con aplicar la formula a continuación.</p>
+                <p class="textos">Primero tenemos que tener en cuenta la desviación estándar de la población, si esta se desconoce se procede con la siguiente formula:</p>
+                <p class="py-0 px-1 rounded-lg bg-gray-200 mx-auto w-60 h-16">
+                     <img src="src/images/Formula_1-removebg-preview.png" alt="Formula1">
+                </p>
+                <p class="textos">
+                    <strong> Donde: </strong> 
+                    <ul class="list-disc ml-16">
+                        <li>
+                          <strong> n:</strong>   Tamaño de la muestra
+                        </li>
+                        <li>
+                            <strong>N:  </strong> tamaño de la población. 
+                        </li>
+                        <li>
+                         <strong> z:</strong>    parámetro estadístico que depende del nivel de confianza, este valor lo asigna el investigador y este indica la probabilidad de que los resultados de la investigación sean ciertos.
+                        </li>
+                        <li>
+                         <strong> e:</strong>     Es el margen de error aceptado, es esa diferencia que puede haber entre el resultado que obtenemos preguntando a una muestra de la población y el que obtendríamos si preguntáramos al total de ella. Esta se representa de manera porcentual y de igual manera es elegida por el investigador.
+                        </li>
+                        <li>
+                           <strong>  p:</strong> cantidad de individuos de la muestra que poseen la característica de estudio y se suele suponer 0.05 debido a que tiende a ser la opción más segura.  
+                        </li>
+                        <li> 
+                           <strong> q:</strong>  proporción de individuos que no poseen la característica de estudio. 
+
+                        </li>
+                        
+                    </ul>
+                </p>
+
+                <p class="textos py-4"> Ahora cuando se conocer la desviación estándar de la población, la fórmula es la siguiente: </p>
+                <p>
+                    <p class="py-0 px-1 rounded-lg bg-gray-200 mx-auto w-60 h-16 ">
+                        <img src="src/images/formual2-removebg-preview.png" alt="Formula2">
+                   </p>
+                </p>
+               
+            </section>
+            <!-- 4 FINAL -->
+    </div>
+
+</main>
+
+
+
+</div>
+<footer class="h-22" style=" background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);" >
+
+    <div class="   lg:flex lg:justify-around lg:items-center py-8 text-lg font-serif font-extrabold">
+
+        <div class="flex justify-center items-center ml-9 lg:block">
+            <a href="index.html"> <img src="src/images/ahora si x5.png" alt="" style="object-fit:contain ; max-width:650px; max-height: 90px;"> </a>
+        </div>
+
+            <div class="flex justify-around gap-x-16  text-lg">
+            <a href="conclusiones" class="test">Conclusiones</a>
+            <a href="bibliografia.html" class="test">Bibliografia</a>
+            <a href="contacto.html" class="test">Contacto</a>
+            </div>
+    </div>
+
+    
+
+
+
+</footer>
+</body>
+</html>
